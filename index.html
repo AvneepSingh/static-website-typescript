@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        MyContacts
+    </title>
+    <link rel="stylesheet" href="bootstrap-grid.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8">
+                <div class="selected-nav">
+                    Contacts
+                </div>
+                <div class="nav">
+                    Assistant
+                </div>
+                <div class="nav">
+                    History
+                </div>
+                <div class="nav">
+                    Sync Sources
+                </div>
+                <div class="nav">
+                    Integration
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class>
+                    <div class="mypanel-div1">
+                        Premium
+                    </div>
+                    <div class="mypanel-div2">
+                        <div class="mypanel-div2-book">
+                            AddressBook
+                        </div>
+                        <div class="mypanel-div2-profile">
+                            CE
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-xl-5" style="border-right:solid rgb(90, 90, 90) 2px;">
+                <div>
+                    <input class="searchbar" id="searchtab" type="text" placeholder="search">
+
+                    <!-- Trigger the modal with a button -->
+                    <button type="button" class="addButton" data-toggle="modal" data-target="#myModal">ADD</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Add New Contact</h4>
+                                </div>
+                                <div class="modal-body" style="text-align:center">
+                                    <input type="text" class="searchbar" placeholder="Name" id="add-new-name">
+                                    <input type="text" class="searchbar" placeholder="Email" id="add-new-email">
+                                    <input type="text" class="searchbar" placeholder="Phone" id="add-new-phone">
+                                    <input type="text" class="searchbar" placeholder="Designation" id="add-new-desg">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" id="saveNewOne" class="btn btn-default" data-dismiss="modal">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div id="contactList">
+
+                </div>
+            </div>
+            <div class="col-xl-7">
+                <div id="details" class="details-style">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
